@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hassan | My Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <div class="stories-container">
+            <div class="story-item" onclick="openStory('https://via.placeholder.com/400x700')">
+               
+            </div>
+         
+        </div>
+
+        <header class="profile">
+            <div class="img-wrapper">
+                <img src="IMG_20251002_194008_070.webp" alt="Mohamed Hassan">
+            </div>
+            <h1>Mohamed Hassan</h1>
+            <p>Frontend Developer & Content Creator</p>
+        </header>
+
+        <main class="links-container">
+            <a href="https://www.instagram.com/muhammad.abdelalim/" target="_blank" class="link-card">
+                <div class="icon-box"><i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+                <i class="fas fa-chevron-left arrow"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mohamedhassanau" target="_blank" class="link-card">
+                <div class="icon-box"><i class="fab fa-tiktok"></i></div>
+                <span>TikTok</span>
+                <i class="fas fa-chevron-left arrow"></i>
+            </a>
+            <a href="mailto:mohamedhassan00911@gmail.com" class="link-card">
+                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                <span>Contact Me</span>
+                <i class="fas fa-chevron-left arrow"></i>
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Mohamed Hassan</p>
+        </footer>
+    </div>
+
+    <div id="story-overlay" class="story-overlay" onclick="closeStory()">
+        <img id="story-img" src="" alt="Story View">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
