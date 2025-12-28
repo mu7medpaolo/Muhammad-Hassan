@@ -215,3 +215,100 @@ footer {
     z-index: 2000;
 }
 .story-overlay img { max-width: 90%; max-height: 80vh; border-radius: 15px; }
+/* تنسيقات عامة للأقسام الجديدة */
+.info-section {
+    margin-top: 40px;
+    text-align: right; /* لمحاذاة النص جهة اليمين */
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    border-right: 4px solid var(--accent-color);
+    color: var(--text-color);
+}
+
+/* --- تنسيق اللغات --- */
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.lang-item {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lang-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.lang-level {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+/* --- تنسيق المشاريع --- */
+.projects-list {
+    display: grid;
+    gap: 12px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.project-info p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.project-link {
+    width: 35px;
+    height: 35px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    background: var(--accent-color);
+    color: white;
+}
